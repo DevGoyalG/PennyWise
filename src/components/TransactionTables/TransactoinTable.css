@@ -1,0 +1,121 @@
+.transaction-table-container {
+    width: 100vw;
+    padding: 0 2rem;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    overflow: scroll;
+  }
+  
+  .search-filter-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .input-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    flex-grow: 1;
+    max-width: 100%;
+    box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  
+  .input-flex img {
+    display: block;
+  }
+  
+  .input-flex input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0;
+  }
+  
+  .input-flex input:focus {
+    outline: none;
+  }
+  
+  .select-input {
+    width: 30%;
+    min-width: 200px; /* Set a minimum width */
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+    border-radius: 0.5rem !important;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  .my-table {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+    border-radius: 0.5rem !important;
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative; /* Allow absolute positioning */
+  }
+  
+  .input-radio {
+    position: absolute; /* Position in the center */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text wrapping inside buttons */
+  }
+  
+  .btn-blue {
+    background-color: var(--theme);
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .table-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .input-radio {
+      position: static;
+      transform: none;
+      margin: 1rem 0; /* Add margin for spacing */
+    }
+  
+    .button-group {
+      justify-content: center;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+  
+  .small-radio-buttons .ant-radio-button-wrapper {
+    height: 30px;
+    line-height: 24px;
+    padding: 0 8px;
+    font-size: 12px;
+    font-weight: 300;
+  }

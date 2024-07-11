@@ -1,0 +1,36 @@
+.chart-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.line-chart, .pi-chart {
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: var(--shadow);
+    height: 400px; /* same height for both charts */
+    box-sizing: border-box;
+}
+
+.line-chart {
+    flex: 2;
+    min-width: 300px; /* Ensure it has a minimum width */
+}
+
+.pi-chart {
+    flex: 1;
+    min-width: 300px; /* Ensure it has a minimum width */
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column;
+    }
+
+    .line-chart, .pi-chart {
+        width: 100%;
+        height: 300px; /* adjust the height for smaller screens if needed */
+    }
+}

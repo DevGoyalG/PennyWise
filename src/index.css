@@ -1,0 +1,42 @@
+/* @import "~antd/dist/antd.css"; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Add your custom styles below */
+
+:root {
+  --theme: #764ba2 ;
+  --black: #000;
+  --white: #fff;
+  --shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.table-container {
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,88 @@
+.my-card {
+  height: 200px;
+    box-shadow: var(--shadow);
+    width: 400px; /* Fixed width */
+    padding: 0.2rem !important;
+    margin: 2rem;
+    text-align: center;
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  }
+  span{
+    font-size: 1.3rem;
+    font-weight: 550;
+  }
+  p{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .my-card:hover {
+    transform: translateY(-5px); /* Slightly lift the card */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+  }
+  
+  
+  .my-row {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin: 2rem auto;
+  }
+  
+  .my-card p {
+    margin: 0;
+  }
+  
+  .ant-card-head-title { 
+    margin: 0rem !important;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .my-row {
+      flex-direction: column; /* Stack cards vertically */
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .my-card {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button.blue {
+    background-color: #28a745; /* Custom color for blue buttons */
+  }
+  
+  .button.blue:hover {
+    background-color: #218838;
+  }
+  
