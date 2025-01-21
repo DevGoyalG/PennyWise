@@ -33,7 +33,7 @@ function AddExpense({ isExpenseModalVisible, handleExpenseCancel, onFinish }) {
       >
         <Form.Item
           style={{ fontWeight: 600 }}
-          label="name"
+          label="Name"
           name="name"
           rules={[
             {
@@ -87,7 +87,14 @@ function AddExpense({ isExpenseModalVisible, handleExpenseCancel, onFinish }) {
           <Select className="select-input-2">
             <Select.Option value="food">Food</Select.Option>
             <Select.Option value="education">Education</Select.Option>
+            <Select.Option value="transport">Transport</Select.Option>
+            <Select.Option value="friend">Friend</Select.Option>
             <Select.Option value="office">Office</Select.Option>
+            <Select.Option value="houserent">House Rent</Select.Option>
+            <Select.Option value="gym">Gym</Select.Option>
+            <Select.Option value="medicine">Medicine</Select.Option>
+            <Select.Option value="fashion">Fashion</Select.Option>
+            <Select.Option value="cosmetics">Cosmetics</Select.Option>
           </Select>
         </Form.Item>
 
